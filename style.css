@@ -80,6 +80,10 @@ header nav ul li a:hover {
   text-decoration: none;
 }
 
+.li-row {
+  flex-direction: row;
+}
+
 /* -------  Join Form ------- */
 form {
   border: 2px solid #6b1a22;
@@ -117,4 +121,15 @@ footer p {
   padding: 20px;
 }
 
+.image {
+  height: 300px;
+  width: 450px;
+  display: flex;
+  justify-content: center;
+}
+
 /* -------  Media Query ------- */
+
+@media and all (min-width: 800px) {
+
+}
