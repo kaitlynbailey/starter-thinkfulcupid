@@ -8,8 +8,9 @@ body {
 h2 {
   font-size: 26px;
   font-weight: 400;
-  margin: 0 10px 15px 10px;
+  margin: 20px 0px 20px 0px;
   text-align: center;
+  font-weight: bold;
 }
 
 h3 {
@@ -32,7 +33,9 @@ section.alternate-background {
 }
 
 main img {
-  width: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 /* ---  Groups & Items --- */
@@ -51,13 +54,7 @@ main img {
   flex: 2;
 }
 
-@media and all (min-width: 800px){
-  /* --- change column to row --- */
-  .group {
-    display: flex;
-    flex-direction: row;
-  }
-}
+
 
 
 /* -------  Navigation ------- */
@@ -95,25 +92,26 @@ header nav ul li a:hover {
   text-decoration: none;
 }
 
-
 /* -------  Join Form ------- */
 form {
   border: 2px solid #6b1a22;
   padding: 10px;
+  justify-content: center;
+  margin: auto;
+  max-width: 450px;
   /* more? */
 }
 
 form div{
+  justify-content: space-between;
+}
+
+
+.space{
   display: flex;
   justify-content: space-between;
 }
 
-.gender-div {
-  display: flex;
-  flex-direction: column;
-  margin: 20px;
-
-}
 
 form label {
   font-weight: bold;
@@ -132,11 +130,14 @@ form button {
   font-size: 24px;
   padding: 15px;
   width: 100%;
+  display: block;
+  justify-content: center;
 }
 
 .text-alt {
   font-weight: bold;
 }
+
 /* -------  Footer ------- */
 
 footer {
@@ -157,16 +158,52 @@ footer p {
   padding: 10px;
 }
 
-.sect {
-  width: 450px
-}
 
 /* -------  Media Query ------- */
 
-@media and all (min-width: 800px) {
-  header {
-
+@media all and (min-width: 800px){
+  /* --- change column to row --- */
+  .group
+   {
+    display: flex;
+    flex-direction: row;
   }
+
+  header {
+    display:flex;
+    justify-content: space-between;
+  }
+
+  .logo{
+    font-size: 55px
+  }
+
+  #join .item {
+    align-self: center;
+  }
+
+  #about .group .item-double{
+    align-content: center;
+    margin: auto;
+  }
+
+  form, form input, form select {
+    width: inherit;
+  }
+  form {
+    max-width: 300px;
+    font-size: 12px;
+  }
+
+  .smaller-text {
+    font-size: 15px;
+  }
+
+  .middle {
+    margin: auto 35px auto auto;
+    padding: auto;
+  }
+}
 
 
 
