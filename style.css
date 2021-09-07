@@ -51,6 +51,14 @@ main img {
   flex: 2;
 }
 
+@media and all (min-width: 800px){
+  /* --- change column to row --- */
+  .group {
+    flex-direction: row;
+  }
+}
+
+
 /* -------  Navigation ------- */
 
 header {
@@ -90,6 +98,11 @@ form {
   padding: 10px;
 }
 
+form div{
+  display: flex;
+  justify-content: space-between;
+}
+
 form label {
   font-weight: bold;
 }
@@ -125,7 +138,13 @@ footer p {
   height: 300px;
   width: 450px;
   display: flex;
-  justify-content: center;
+
+  margin: 10px;
+  padding: 10px;
+}
+
+.sect {
+  width: 450px
 }
 
 /* -------  Media Query ------- */
