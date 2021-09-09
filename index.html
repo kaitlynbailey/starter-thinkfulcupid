@@ -23,8 +23,8 @@
       <nav>
         <ul> 
           <li><a href="#join">Join</a></li>
-          <li><a href="about">About</a></li>
-          <li><a href="download">Download</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#download">Download</a></li>
           <li><a href="#blog">Blog</a></li>
         </ul>
       </nav>
@@ -69,46 +69,22 @@
                   required
                 />
               </div>
-            
-              <div>
-              <p class="text-alt">My gender is...</p>
-              <div>
-                <div>
-                  <input name="gender" type="checkbox" id="woman"/>
-                  <label for="woman">Woman</label> 
-                </div>
-                <div>
-                  <input name="gender" type="checkbox" id="man"/>
-                  <label for="man">Man</label> 
-                </div>
-                <div>
-                  <input name="gender" type="checkbox" id="non-binary"/>
-                  <label for="non-binary">Non-Binary</label> 
-                </div>
-                <div>
-                  <input name="gender" type="checkbox" id="gender-fluid"/>
-                  <label for="gender-fluid">Gender Fluid</label> 
-                </div>
-                <div>
-                  <input name="gender" type="checkbox" id="transgender"/>
-                  <label for="transgender">Transgender</label> 
-                </div>
-                <div>
-                  <input name="gender" type="checkbox" id="cisgender"/>
-                  <label for="cisgender">Cisgender</label> 
-                </div>
-                <div>
-                  <input name="gender" type="checkbox" id="two-spirit"/>
-                  <label for="two-spirit">Two Spirit</label> 
-                </div>
-                <div>
-                  <input name="gender" type="checkbox" id="agender"/>
-                  <label for="agender">Agender</label> 
-                </div>
-                <div>
-                  <input name="gender" type="checkbox" id="intersex"/>
-                  <label for="intersex">Intersex</label> 
-                </div>
+              
+              <div class="space">
+                <label for="gender">I am a/an</label>
+                <select id="gender" name="gender" multiple>
+                  <option value="woman">Woman</option>
+                  <option value="man">Man</option>
+                  <option value="enby">Non-Binary</option>
+                  <option value="fluid">Gender-Fluid</option>
+                  <option value="trans">Transgender</option>
+                  <option value="cis">Cisgender</option>
+                  <option value="intersex">Intersex</option>
+                  <option value="two">Two-Spirit</option>
+                  <option value="asex">Asexual</option>
+                </select>
+              </div>
+          
                 <div>
                   <button type="sumbit">JOIN</button>
                 </div>
